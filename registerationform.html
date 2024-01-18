@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .icon {
+            position: absolute;
+            top: 14px;
+            left: 10px;
+        }
+
+        .icon i {
+            color: #888;
+        }
+
+        .form-group input:focus {
+            border-color: #ff6b6b;
+        }
+
+        .form-group input:focus + .icon i {
+            color: #ff6b6b;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff4646;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <div class="icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <div class="icon">
+                    <i class="fa fa-lock"></i>
+                </div>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button class="btn" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
